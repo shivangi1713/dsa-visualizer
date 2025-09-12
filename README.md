@@ -1,11 +1,6 @@
-# Re-run creation (kernel was reset); create README and SVG docs again.
-import os, zipfile
 
-root = "/mnt/data/readme_pack"
-assets = os.path.join(root, "docs")
-os.makedirs(assets, exist_ok=True)
-
-readme = """<!-- Banner -->
+readme = """<<img width="1367" height="258" alt="image" src="https://github.com/user-attachments/assets/4acb70b3-9ab1-475a-8831-1bb49362afc3" />
+>
 <p align="center">
   <img src="docs/hero.svg" width="100%" alt="DSA Visualizer banner" />
 </p>
