@@ -31,13 +31,17 @@
 - **Lightweight & fast** — No backend, no heavy graphics; crisp SVG + Tailwind utilities.
 
 <p align="center">
-  <img src="docs/sorting.svg" width="45%" alt="Sorting preview" />
-  <img src="docs/graph.svg" width="45%" alt="Graph preview" />
+ <img width="1552" height="741" alt="image" src="https://github.com/user-attachments/assets/187efe6c-1541-4622-bd8c-f575d9d8a9a3" />
+
+ <img width="1016" height="889" alt="image" src="https://github.com/user-attachments/assets/81cebeac-51dd-4e26-b36c-69e712834475" />
+
 </p>
 
 <p align="center">
-  <img src="docs/list.svg" width="45%" alt="Linked list preview" />
-  <img src="docs/bst.svg" width="45%" alt="BST preview" />
+ <img width="1186" height="439" alt="image" src="https://github.com/user-attachments/assets/e5894b7f-90cb-414a-8316-5760ce70fd17" />
+
+ <img width="1194" height="832" alt="image" src="https://github.com/user-attachments/assets/3cbba7d9-d185-4663-9468-dab7b7d751c9" />
+
 </p>
 
 ---
