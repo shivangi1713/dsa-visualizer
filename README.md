@@ -64,13 +64,4 @@ Clean, interactive visuals for **Sorting**, **Singly Linked List**, **Binary Sea
 
 ---
 
-## 6) How to Use
 
-### A) Run the app (without Gemini)
-```powershell
-# Windows PowerShell
-git clone https://github.com/<your-username>/dsa-visualizer.git
-cd dsa-visualizer
-npm install
-npm run dev
-# open the printed URL (e.g., http://localhost:5173)
