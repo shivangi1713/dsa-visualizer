@@ -26,12 +26,12 @@ Clean, interactive visuals for **Sorting**, **Singly Linked List**, **Binary Sea
 ## 3) Key Components
 - **UI Pages**: `Home`, `Sorting`, `Linked List`, `BST`, `Graph (BFS/DFS)`.
 - **Visual primitives**: Bars (sorting), nodes/edges (graph), circles/arrows (list), tree layout (BST).
-- **Algorithm library** (`src/lib`): Sorting steps, BFS/DFS traversal, list ops, BST insert/search/delete.
-- **Tips** (`src/data/tips.ts`): Page-specific guidance shown in a modal.
+- **Algorithm library** (src/lib): Sorting steps, BFS/DFS traversal, list ops, BST insert/search/delete.
+- **Tips** (src/data/tips.ts): Page-specific guidance shown in a modal.
 - **Gemini Tutor**:
-  - `server/index.mjs`: Express server (`POST /api/explain`) using `@google/genai`.
-  - `src/lib/ai.ts`: Tiny fetch helper for the UI.
-  - `src/components/AISidebar.tsx`: Always-available sidebar (drawer on mobile).
+  - server/index.mjs: Express server (POST /api/explain) using @google/genai.
+  - src/lib/ai.ts: Tiny fetch helper for the UI.
+  - src/components/AISidebar.tsx: Always-available sidebar (drawer on mobile).
 
 ---
 
