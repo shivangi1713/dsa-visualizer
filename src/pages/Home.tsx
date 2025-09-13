@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { explain } from '../lib/ai'   // add this at the top
 
 function Sparkle(){ return (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -8,6 +9,25 @@ function Sparkle(){ return (
 )}
 
 export default function Home(){
+  // <<< ADDED: local state and handler
+  const [aiText, setAiText] = React.useState('');
+const [loading, setLoading] = React.useState(false);
+
+async function testGemini() {
+  try {
+    setLoading(true);
+    const t = await explain(
+      'Say hello to the user and describe this DSA visualizer in one short sentence.',
+      'You are a friendly DSA tutor.'
+    );
+    setAiText(t);                     // <-- show the reply
+  } catch (e) {
+    setAiText('AI request failed — check the AI server and GEMINI_API_KEY.');
+  } finally {
+    setLoading(false);
+  }
+}
+
   return (
     <div className="space-y-8">
       <section className="relative overflow-hidden rounded-3xl border bg-white p-8">
@@ -18,11 +38,22 @@ export default function Home(){
             <Sparkle/>SHIVANGI😊
           </div>
           <h1 className="text-3xl font-semibold leading-tight">Understand Data Structures & Algorithms with clean, interactive visuals</h1>
-          <p className="mt-2 text-gray-700">Step through operations, see state changes, and build intuition—no heavy graphics, just crisp SVG & Tailwind.</p>
+          <p className="mt-2 text-gray-700">Step through operations, see state changes, and build intuition—</p>
           <div className="mt-4 flex gap-3">
             <Link to="/sorting" className="btn btn-primary">Try Sorting</Link>
             <Link to="/graph" className="btn btn-ghost">Explore Graphs</Link>
+            {/* <<< ADDED: test button */}
+            <button className="btn" onClick={testGemini} disabled={loading}>
+              {loading ? 'Asking Gemini…' : 'Test Gemini Explain'}
+            </button>
           </div>
+
+          {/* <<< ADDED: result panel */}
+          {aiText && (
+            <div className="mt-3 p-3 rounded-xl border bg-white text-sm">
+              {aiText}
+            </div>
+          )}
         </div>
       </section>
 
