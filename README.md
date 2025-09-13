@@ -38,7 +38,8 @@ Clean, interactive visuals for **Sorting**, **Singly Linked List**, **Binary Sea
 ## 4) Workflow
 Save this diagram to your repo (recommended path: `docs/`), then link it in README:
 
-![Workflow](docs/dsa-workflow-gemini-v2.svg)
+<img width="1465" height="811" alt="Screenshot 2025-09-14 013026" src="https://github.com/user-attachments/assets/e7042834-20ef-457a-8d1f-c2fadc057086" />
+
 
 **Flow (high-level):**
 1. User picks a visualizer and interacts with controls (size, steps, operations).
