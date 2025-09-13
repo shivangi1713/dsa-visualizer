@@ -1,16 +1,16 @@
-# Write a new README.md with the requested sections and save it for download.
-readme = r"""# DSA Visualizer
+# DSA Visualizer.
 
-Clean, interactive visuals for **Sorting**, **Singly Linked List**, **Binary Search Tree**, and **Graphs (BFS/DFS + Provinces)**. Built with **React + TypeScript + Tailwind + Vite**. Optional **Gemini Tutor** sidebar gives short, beginner-friendly explanations of what you’re seeing.
+Clean, interactive visuals for **Sorting**, **Singly Linked List**, **Binary Search Tree**, and **Graphs (BFS/DFS + Provinces)**. Built with **React + TypeScript + Tailwind + Vite**. Optional **Gemini Tutor** sidebar gives short,explanations of what you’re seeing.
 
 ---
 
 ## 1) Project Overview
 - **Client-side visuals**: Algorithms render as lightweight SVG; no backend is required for animations.
 - **Step-by-step intuition**: Precomputed snapshots (sorting) and live pointer/tree updates (list/BST/graph).
-- **Gemini Tutor (optional)**: A small local server calls Google’s Gemini to generate explanations (`/api/explain`).
+- **Gemini Tutor**: A small local server calls Google’s Gemini to generate explanations (`/api/explain`).
 - **Friendly UI**: Clean layout, gradients, and a Tips modal with quick guidance on each page.
-
+  
+<img width="1465" height="849" alt="Screenshot 2025-09-14 015456" src="https://github.com/user-attachments/assets/46b8a529-5ba5-4180-94c2-49b5ed820b15" />
 > Live visuals run entirely in the browser. Only the Gemini feature calls a backend (local Express server).
 
 ---
@@ -36,12 +36,12 @@ Clean, interactive visuals for **Sorting**, **Singly Linked List**, **Binary Sea
 ---
 
 ## 4) Workflow
-Save this diagram to your repo (recommended path: `docs/`), then link it in README:
+
 
 <img width="1465" height="811" alt="Screenshot 2025-09-14 013026" src="https://github.com/user-attachments/assets/e7042834-20ef-457a-8d1f-c2fadc057086" />
 
 
-**Flow (high-level):**
+
 1. User picks a visualizer and interacts with controls (size, steps, operations).
 2. The page updates **local state** → SVG re-renders the current snapshot.
 3. (Optional) User asks **Gemini Tutor** → UI calls `/api/explain` through Vite’s dev proxy.
